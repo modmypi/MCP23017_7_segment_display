@@ -46,8 +46,8 @@ def setup():
 	wiringpi.pullUpDnControl(buttons['decrease'],2)
 	for x in range(0,len(seven_seg)): # loop through each digit
                 for seg in seven_seg[x]: # loop through each segment of the digit
-						wiringpi.pinMode(seg,1) # set the segment pin as an output
-                        wiringpi.digitalWrite(seg,0) # set the output low/off
+                    wiringpi.pinMode(seg,1) # set the segment pin as an output
+                    wiringpi.digitalWrite(seg,0) # set the output low/off
 	display(0,seven_seg) # with everything setup we are good to go and display the number 0
 
 # define our cleanup function to be used when we exit the script
